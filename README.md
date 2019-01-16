@@ -1,3 +1,6 @@
+# 仅限公司内部使用,请勿下载
+----
+
 # FFUpdateSDK-iOS
 
 [![CI Status](https://img.shields.io/travis/voisen/FFUpdateSDK-iOS.svg?style=flat)](https://travis-ci.org/voisen/FFUpdateSDK-iOS)
