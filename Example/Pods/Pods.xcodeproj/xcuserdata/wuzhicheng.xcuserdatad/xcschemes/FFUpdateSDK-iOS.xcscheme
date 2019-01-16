@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8150934FE8B11F1C47193544EA0689AF"
+               BlueprintIdentifier = "68D5BE7938480677E6669190E4623B25"
                BlueprintName = "FFUpdateSDK-iOS"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "FFUpdateSDK-iOS.framework">
+               BuildableName = "libFFUpdateSDK-iOS.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

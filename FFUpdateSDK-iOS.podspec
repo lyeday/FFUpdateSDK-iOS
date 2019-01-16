@@ -30,14 +30,15 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FFUpdateSDK-iOS/Classes/**/*'
+  s.source_files = 'FFUpdateSDK-iOS/**/*'
   s.requires_arc = true
   
   # s.resource_bundles = {
   #   'FFUpdateSDK-iOS' => ['FFUpdateSDK-iOS/Assets/*.png']
   # }
-
-  s.public_header_files = 'Pod/Classes/FFUpdateSDK/FFUpdate.h,Pod/Classes/FFUpdateSDK/FFCordovaResourceUpdate.h'
+  # s.public_header_files = 'FFUpdateSDK-iOS/FFUpdate.h', 'FFUpdateSDK-iOS/FFCordovaResourceUpdate.h'
+  s.public_header_files = 'FFUpdateSDK-iOS/*.h', 'FFUpdateSDK-iOS/Category/*.h'
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

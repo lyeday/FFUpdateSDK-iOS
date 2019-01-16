@@ -18,7 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "FFUpdateSDK-iOS/Classes/**/*",
+  "source_files": "FFUpdateSDK-iOS/**/*",
   "requires_arc": true,
-  "public_header_files": "Pod/Classes/FFUpdateSDK/FFUpdate.h,Pod/Classes/FFUpdateSDK/FFCordovaResourceUpdate.h"
+  "public_header_files": "FFUpdateSDK-iOS/*.h,FFUpdateSDK-iOS/Category/*.h",
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  }
 }

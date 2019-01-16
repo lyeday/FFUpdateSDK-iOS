@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079FD089720CCC35175A6F7A /* libPods-FFUpdateSDK-iOS_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7D57A973F89FC8D3381315 /* libPods-FFUpdateSDK-iOS_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		B4ED6756BD115EEEEAB63566 /* Pods_FFUpdateSDK_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0920AED04E4663A72D25601 /* Pods_FFUpdateSDK_iOS_Example.framework */; };
-		D71296EEC8455B9154B198D1 /* Pods_FFUpdateSDK_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAD2D41471CF341D8CB5210 /* Pods_FFUpdateSDK_iOS_Tests.framework */; };
+		9DBFDAC806146F0EB432BEBC /* libPods-FFUpdateSDK-iOS_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8F7A78E4A0237F0BBA6FF7 /* libPods-FFUpdateSDK-iOS_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +64,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		953FE8DD405D0A9504C2C29E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A0920AED04E4663A72D25601 /* Pods_FFUpdateSDK_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFUpdateSDK_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBAD2D41471CF341D8CB5210 /* Pods_FFUpdateSDK_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFUpdateSDK_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8F7A78E4A0237F0BBA6FF7 /* libPods-FFUpdateSDK-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFUpdateSDK-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7D57A973F89FC8D3381315 /* libPods-FFUpdateSDK-iOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFUpdateSDK-iOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E035BF1F29E367BAB0CFCE9A /* Pods-FFUpdateSDK-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFUpdateSDK-iOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFUpdateSDK-iOS_Example/Pods-FFUpdateSDK-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				B4ED6756BD115EEEEAB63566 /* Pods_FFUpdateSDK_iOS_Example.framework in Frameworks */,
+				9DBFDAC806146F0EB432BEBC /* libPods-FFUpdateSDK-iOS_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				D71296EEC8455B9154B198D1 /* Pods_FFUpdateSDK_iOS_Tests.framework in Frameworks */,
+				079FD089720CCC35175A6F7A /* libPods-FFUpdateSDK-iOS_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				A0920AED04E4663A72D25601 /* Pods_FFUpdateSDK_iOS_Example.framework */,
-				CBAD2D41471CF341D8CB5210 /* Pods_FFUpdateSDK_iOS_Tests.framework */,
+				CE8F7A78E4A0237F0BBA6FF7 /* libPods-FFUpdateSDK-iOS_Example.a */,
+				DF7D57A973F89FC8D3381315 /* libPods-FFUpdateSDK-iOS_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				107D4D8B9A89CBDABAE8C288 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,7 +225,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				1D5C6F4DE456C887A61DB9B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,48 +293,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		107D4D8B9A89CBDABAE8C288 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FFUpdateSDK-iOS_Example/Pods-FFUpdateSDK-iOS_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FFUpdateSDK-iOS/FFUpdateSDK_iOS.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFUpdateSDK_iOS.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFUpdateSDK-iOS_Example/Pods-FFUpdateSDK-iOS_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1D5C6F4DE456C887A61DB9B2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FFUpdateSDK-iOS_Tests/Pods-FFUpdateSDK-iOS_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
-				"${BUILT_PRODUCTS_DIR}/Expecta+Snapshots/Expecta_Snapshots.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta_Snapshots.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFUpdateSDK-iOS_Tests/Pods-FFUpdateSDK-iOS_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		38D3C70AB0267767147E071A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

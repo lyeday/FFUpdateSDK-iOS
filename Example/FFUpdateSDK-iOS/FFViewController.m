@@ -7,6 +7,8 @@
 //
 
 #import "FFViewController.h"
+#import <FFUpdate.h>
+#import <FFCordovaResourceUpdate.h>
 
 @interface FFViewController ()
 
