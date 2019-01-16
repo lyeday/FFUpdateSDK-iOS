@@ -31,12 +31,13 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'FFUpdateSDK-iOS/Classes/**/*'
+  non_arc_files = 'FFUpdateSDK-iOS/Classes/FFUpdateSDK/OpenUDID/OpenUDID.m'
   
   # s.resource_bundles = {
   #   'FFUpdateSDK-iOS' => ['FFUpdateSDK-iOS/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/FFUpdateSDK/FFUpdate.h,Pod/Classes/FFUpdateSDK/FFCordovaResourceUpdate.h,Pod/Classes/FFUpdateSDK/OpenUDID/OpenUDID.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
