@@ -14,7 +14,6 @@
 #import "FFCordovaResourceUpdate.h"
 #import "FFUpdate.h"
 #import "FFNetwork.h"
-#import "OpenUDID.h"
 #import "aes.h"
 #import "aesopt.h"
 #import "aestab.h"

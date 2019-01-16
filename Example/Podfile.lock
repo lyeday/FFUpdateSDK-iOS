@@ -34,7 +34,7 @@ SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  FFUpdateSDK-iOS: dc0d8499ac9572ec2d7d8c9365433a495370877e
+  FFUpdateSDK-iOS: dab639fdab7fc859b3d636e4365fd703ae599814
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
 PODFILE CHECKSUM: 18c3b3dba57153bd056ccd774a6d24650871199c
