@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'FFUpdateSDK-iOS/Classes/**/*'
-  s.non_arc_files = 'FFUpdateSDK-iOS/Classes/FFUpdateSDK/OpenUDID/OpenUDID.m'
+  non_arc_files = 'FFUpdateSDK-iOS/Classes/FFUpdateSDK/OpenUDID/OpenUDID.m'
   s.requires_arc = true
   
   # s.resource_bundles = {

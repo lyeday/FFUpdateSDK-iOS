@@ -18,5 +18,7 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "FFUpdateSDK-iOS/Classes/**/*"
+  "source_files": "FFUpdateSDK-iOS/Classes/**/*",
+  "requires_arc": true,
+  "public_header_files": "Pod/Classes/FFUpdateSDK/FFUpdate.h,Pod/Classes/FFUpdateSDK/FFCordovaResourceUpdate.h,Pod/Classes/FFUpdateSDK/OpenUDID/OpenUDID.h"
 }
