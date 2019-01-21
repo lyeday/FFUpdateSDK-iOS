@@ -77,11 +77,11 @@
 
 + (void)checkUpdateWithResult:(void (^)(BOOL, NSString *, NSString *))callback{
     FFUpdate *shareObj = [self shareUpdate];
-    shareObj.isUpdate = true;
     if (shareObj.appKey == nil) {
         NSAssert(NO, @"请调用\"registerWithAppKey:\"方法,注册key!!");
         return;
     }
+    shareObj.isUpdate = true;
     //获取到安装时间
     NSDate *date = [self getInstallDate];
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
@@ -117,6 +117,7 @@
             if (callback) {
                 callback(false,nil,nil);
             }
+            shareObj.isUpdate = false;
             return ;
         }
         if (shareObj.firstInstall) {
@@ -144,6 +145,7 @@
         
         if (callback) { //判断是否为手动检查更新,如果是,则手动调用安装更新
             callback(currentVersion < [[data valueForKey:@"current"] integerValue],[NSString stringWithFormat:@"%@",[data valueForKey:@"version"]],[NSString stringWithFormat:@"%@",[data valueForKey:@"msg"]]);
+            shareObj.isUpdate = false;
             return;
         }
         
@@ -158,6 +160,7 @@
             return;
         }
         FFLog(@"已是最新版");
+        shareObj.isUpdate = false;
     } error:^(NSError *error) {
         FFLog(@"请求错误:%@",error);
         shareObj.isUpdate = false;
