@@ -103,6 +103,11 @@
  更新成功
  */
 - (void)updateComplete{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.progressView.progress = 0;
+        self.progressLab.text = @"0%";
+        self.progressTitleLab.text = @"正在应用更新文件...";
+    });
     NSInteger current = [[self.data valueForKey:@"current"] integerValue];
     NSString *index = [self.data valueForKey:@"index"];
     [[NSUserDefaults standardUserDefaults] setInteger:current forKey:@"FF_CORDOVA_RESOURCE_VERSION"];
@@ -119,6 +124,7 @@
         return;
     }
     [_fm removeItemAtPath:[FFCordovaResourceUpdate wwwURL].path error:nil];
+    [self copyFilePath:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"www"] toPath:[FFCordovaResourceUpdate wwwURL].path];
     [self copyFilePath:_unzipPath toPath:[FFCordovaResourceUpdate wwwURL].path];
     [FFCordovaResourceUpdate setStartPage:index];
     UIViewController *vc = (UIViewController *)[FFCordovaResourceUpdate mainViewController];
@@ -133,6 +139,8 @@
     }
     
     {
+        self.progressView.progress = 0;
+        self.progressLab.text = @"0%";
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"更新成功" message:@"请退出后重新打开软件" delegate:self cancelButtonTitle:@"立即退出" otherButtonTitles:nil, nil];
         alertView.tag = 2;
         [alertView show];
@@ -162,12 +170,10 @@
             if (succeeded) {
                 self.progressView.progress = 1;
                 self.progressLab.text = @"100%";
-                NSLog(@"更新成功:%@",path);
                 [self updateComplete];
             }else{
                 self.progressView.progress = 0;
                 self.progressLab.text = @"0%";
-                NSLog(@"更新失败");
                 [self updateFaild];
             }
         });
@@ -306,7 +312,6 @@
 
 
 - (void)copyFilePath:(NSString *)path toPath:(NSString *)toPath{
-    
     [_fm createDirectoryAtPath:toPath withIntermediateDirectories:true attributes:nil error:nil];
     NSArray<NSString *> *list = [_fm contentsOfDirectoryAtPath:path error:nil];
     for (int i = 0; i < list.count; i ++) {
@@ -324,7 +329,11 @@
             if ([_fm fileExistsAtPath:to]) {
                 [_fm removeItemAtPath:to error:nil];
             }
-            [_fm copyItemAtPath:subPath toPath:to error:nil];
+            NSError *error = NULL;
+            [_fm copyItemAtPath:subPath toPath:to error:&error];
+            if(error){
+//                NSLog(@"拷贝文件出错:%@",subPath);
+            }
         }
         
     }
