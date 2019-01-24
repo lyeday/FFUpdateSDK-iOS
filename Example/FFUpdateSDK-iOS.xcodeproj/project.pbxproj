@@ -24,7 +24,6 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9DBFDAC806146F0EB432BEBC /* libPods-FFUpdateSDK-iOS_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8F7A78E4A0237F0BBA6FF7 /* libPods-FFUpdateSDK-iOS_Example.a */; };
-		DB35A6B821F6B4F30048F6A6 /* www in Resources */ = {isa = PBXBuildFile; fileRef = DB35A6B721F6B4F30048F6A6 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		953FE8DD405D0A9504C2C29E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CE8F7A78E4A0237F0BBA6FF7 /* libPods-FFUpdateSDK-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFUpdateSDK-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB35A6B721F6B4F30048F6A6 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		DF7D57A973F89FC8D3381315 /* libPods-FFUpdateSDK-iOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFUpdateSDK-iOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E035BF1F29E367BAB0CFCE9A /* Pods-FFUpdateSDK-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFUpdateSDK-iOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFUpdateSDK-iOS_Example/Pods-FFUpdateSDK-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,7 +98,6 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				DB35A6B621F6B4D60048F6A6 /* Staging */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for FFUpdateSDK-iOS */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -186,14 +183,6 @@
 				1DB454003A704AC66919C3D1 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		DB35A6B621F6B4D60048F6A6 /* Staging */ = {
-			isa = PBXGroup;
-			children = (
-				DB35A6B721F6B4F30048F6A6 /* www */,
-			);
-			path = Staging;
 			sourceTree = "<group>";
 		};
 		F9ED4B9013DAE7067822E936 /* Pods */ = {
@@ -292,7 +281,6 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				DB35A6B821F6B4F30048F6A6 /* www in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
