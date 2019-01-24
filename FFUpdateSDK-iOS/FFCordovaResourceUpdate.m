@@ -150,6 +150,10 @@
     return [self shareUpdate].viewController;
 }
 
++ (NSString *)appkey{
+    return [self shareUpdate].appKey;
+}
+
 #pragma mark - UIAlertViewDelegate
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{

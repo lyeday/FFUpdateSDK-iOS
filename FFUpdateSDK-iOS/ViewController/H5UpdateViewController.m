@@ -11,6 +11,7 @@
 #import "ZipArchive.h"
 #import "FFUpdateNetwork.h"
 #import "UIViewController+FFUpdate.h"
+#import "FFDeviceInfo.h"
 
 //FF_CORDOVA_RESOURCE_VERSION
 
@@ -103,12 +104,13 @@
  更新成功
  */
 - (void)updateComplete{
+    NSInteger current = [[self.data valueForKey:@"current"] integerValue];
     dispatch_async(dispatch_get_main_queue(), ^{
+        [FFDeviceInfo reportInstall:INSTALL_H5 appkey:[FFCordovaResourceUpdate appkey] sysVersion:current];
         self.progressView.progress = 0;
         self.progressLab.text = @"0%";
         self.progressTitleLab.text = @"正在应用更新文件...";
     });
-    NSInteger current = [[self.data valueForKey:@"current"] integerValue];
     NSString *index = [self.data valueForKey:@"index"];
     [[NSUserDefaults standardUserDefaults] setInteger:current forKey:@"FF_CORDOVA_RESOURCE_VERSION"];
     BOOL check = false;

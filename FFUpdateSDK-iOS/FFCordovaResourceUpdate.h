@@ -43,5 +43,6 @@
 
 + (NSURL *)zipTempURL;
 + (NSURL *)wwwURL;
++ (NSString *)appkey;
 
 @end
