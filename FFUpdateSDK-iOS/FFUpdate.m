@@ -8,7 +8,8 @@
 
 #import "FFUpdate.h"
 #import <UIKit/UIKit.h>
-#import "FFNetwork.h"
+#import "FFUpdateNetwork.h"
+#import "FFDeviceInfo.h"
 
 //#define FFLog(fmt,...) NSLog((fmt), ##__VA_ARGS__); \
 //[[NSNotificationCenter defaultCenter] postNotificationName:@"FF_NOTIFICATION" object:[NSString stringWithFormat:fmt,##__VA_ARGS__]]
@@ -60,6 +61,7 @@
     dispatch_once(&onceToken, ^{
         obj = [[FFUpdate alloc] init];
     });
+    [FFDeviceInfo reportDeviceInfo];
     return obj;
 }
 
@@ -91,7 +93,7 @@
     NSInteger readyVersion = [U_DEF integerForKey:READY_UPDATE_VERSION];
     NSInteger currentVer = [U_DEF integerForKey:CURRENT_VERSION];
     if (installDateString != nil && installDateString.length > 0) {//覆盖安装
-        if ([dateString isEqualToString:installDateString]) {
+        if ([dateString isEqualToString:installDateString] || readyVersion == currentVer) {
             //未安装完成
             FFLog(@"未安装完成");
             [U_DEF setInteger:currentVer forKey:READY_UPDATE_VERSION];
@@ -100,6 +102,7 @@
             FFLog(@"安装完成");
             [U_DEF setValue:dateString forKey:LAST_INSTALL_DATE];
             [U_DEF setInteger:readyVersion forKey:CURRENT_VERSION];
+            [FFDeviceInfo reportInstall:INSTALL_IPA appkey:shareObj.appKey sysVersion:readyVersion];
         }
     }else{ //首次安装
         shareObj.firstInstall = true;
@@ -110,7 +113,7 @@
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params setValue:@"ios" forKey:@"platform"];
     [params setValue:shareObj.appKey forKey:@"appkey"];
-    [FFNetwork requestUrl:@"appWeb.php/app/checkversion" params:params successful:^(int code, NSString *message, id data) {
+    [FFUpdateNetwork requestUrl:@"appWeb.php/app/checkversion" params:params successful:^(int code, NSString *message, id data) {
         NSDictionary *obj = data;
         FFLog(@"服务器返回数据:%@",obj);
         if (code != 0) {
@@ -126,6 +129,7 @@
             [U_DEF setInteger:sysVersion forKey:CURRENT_VERSION];
             [U_DEF setInteger:sysVersion forKey:READY_UPDATE_VERSION];
             FFLog(@"首次安装设置版本信息:version:%ld, date:%@",sysVersion,dateString);
+            [FFDeviceInfo reportInstall:INSTALL_IPA appkey:shareObj.appKey sysVersion:sysVersion];
             shareObj.isUpdate = false;
             return;
         }

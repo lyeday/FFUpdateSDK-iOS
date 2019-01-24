@@ -9,7 +9,7 @@
 #import "H5UpdateViewController.h"
 #import "FFCordovaResourceUpdate.h"
 #import "ZipArchive.h"
-#import "FFNetwork.h"
+#import "FFUpdateNetwork.h"
 #import "UIViewController+FFUpdate.h"
 
 //FF_CORDOVA_RESOURCE_VERSION
@@ -190,7 +190,7 @@
     if ([[NSFileManager defaultManager] fileExistsAtPath:_zipFilePath]) {
         [[NSFileManager defaultManager] removeItemAtPath:_zipFilePath error:nil];
     }
-    [FFNetwork downloadFileWithUrl:[NSString stringWithFormat:@"appWeb.php/app/downloadUpdate?id=%@",[self.data valueForKey:@"id"]] toLocationPath:_zipFilePath
+    [FFUpdateNetwork downloadFileWithUrl:[NSString stringWithFormat:@"appWeb.php/app/downloadUpdate?id=%@",[self.data valueForKey:@"id"]] toLocationPath:_zipFilePath
                           progress:^(int64_t speedBytes, int64_t completeBytes, int64_t totalBytes) {
                               dispatch_async(dispatch_get_main_queue(), ^{
                                   CGFloat downloadProgress = completeBytes*1.0f/totalBytes;

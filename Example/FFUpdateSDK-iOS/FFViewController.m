@@ -21,6 +21,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [FFUpdate registerWithAppKey:@"kYvTNZmzD1kSzlSiKVmRuR8sU2U9vs5j"];
+    [FFUpdate checkUpdate];
 }
 - (void)didReceiveMemoryWarning
 {

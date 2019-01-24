@@ -7,9 +7,10 @@
 //
 
 #import "FFCordovaResourceUpdate.h"
-#import "FFNetwork.h"
+#import "FFUpdateNetwork.h"
 #import "H5UpdateViewController.h"
 #import "FFUpdate.h"
+#import "FFDeviceInfo.h"
 
 #define KEY_CORDOVA_RESOURCE_VERSION @"FF_CORDOVA_RESOURCE_VERSION"
 #define KEY_CORDOVA_RESOURCE_INDEX   @"FF_CORDOVA_RESOURCE_INDEX"
@@ -52,6 +53,7 @@
     dispatch_once(&onceToken, ^{
         obj = [[FFCordovaResourceUpdate alloc] init];
     });
+    [FFDeviceInfo reportDeviceInfo];
     return obj;
 }
 
@@ -73,7 +75,7 @@
     [params setValue:@"ios" forKey:@"platform"];
     [params setValue:@(appVersion) forKey:@"version"];
     [params setValue:[self shareUpdate].appKey forKey:@"appkey"];
-    [FFNetwork requestUrl:@"appWeb.php/app/checkhtml" params:params successful:^(int code, NSString *message, id data) {
+    [FFUpdateNetwork requestUrl:@"appWeb.php/app/checkhtml" params:params successful:^(int code, NSString *message, id data) {
         if (code == 0) {
             [[self shareUpdate] setData:data];
             NSInteger current = [[data valueForKey:@"current"] integerValue];
