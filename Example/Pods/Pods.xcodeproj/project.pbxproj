@@ -38,7 +38,6 @@
 		240B2559B270C0497F375F56B84C5266 /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1DEB31067EBE3C0CD6D1D375E6CAD0 /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		24FF4A3B66A2F383BA14790790108406 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A36E054D8FBAAF101AB6189E78AA57 /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2523657BEE249A532CDFD495AC911F39 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AC24FED2E3F70F91EFEE60495E0954 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		260E8E057569BA0EB114D31B1EC94DB3 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = FB890483FBC532EFDA77548EE3CB77CE /* Info.plist */; };
 		26EE69036F8E1D37693B1CC6F4EE184B /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = AF523F074602EE6E34F2A9DF1BD79EC2 /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		274ACD8C096BFB9252D52A6C59B89A59 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A0F7593B3E9B2237E6172721CD8F606 /* Specta.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2780DC59C0F4E6C9F8C78CCC27F9FB45 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4F988EFD91FEA4A6D6B8ABA73F9092 /* SpectaDSL.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -267,15 +266,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008CADB5B2B3953D3155657E6D95D504 /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pwd2key.c; sourceTree = "<group>"; };
+		008CADB5B2B3953D3155657E6D95D504 /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
 		014A10E4D3F5132671DD6C646F43B2EF /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
-		0203A0C8477C9619E98F3C64CE7E4E1A /* libPods-FFUpdateSDK-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FFUpdateSDK-iOS_Example.a"; path = "libPods-FFUpdateSDK-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0203A0C8477C9619E98F3C64CE7E4E1A /* libPods-FFUpdateSDK-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFUpdateSDK-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CCC915332DCE341C84F4A272472BB2 /* Pods-FFUpdateSDK-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FFUpdateSDK-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		0449AC94B950A0120BD47F33CBF2B364 /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
 		059AADDFB588E386427AB1666CC4044D /* Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Expecta.xcconfig; sourceTree = "<group>"; };
 		068F277A66D2C010F481A2C979508024 /* Pods-FFUpdateSDK-iOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FFUpdateSDK-iOS_Tests-umbrella.h"; sourceTree = "<group>"; };
 		070A9F01CA37D9A41FD21D6C28EB9AD2 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		099BABD2D50D6ABA8F81244A168F46AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		099BABD2D50D6ABA8F81244A168F46AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A9D56E370908E29C551714FC86426D3 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 		0C16DAC41E0627C44A61B923198850D5 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		0D2E36FDF85AE20C6DADF23116960314 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
@@ -285,9 +284,9 @@
 		104276BAEA863A04E8630CFBCDF4874D /* FFDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FFDeviceInfo.m; sourceTree = "<group>"; };
 		10CFA301394037D8EB4ECEC4D2CB2A7F /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		1138D27C7F194074B86B8A30C42726D5 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
-		12D1FE0AC1F1E28DBAAC791210385C93 /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; path = crypt.c; sourceTree = "<group>"; };
+		12D1FE0AC1F1E28DBAAC791210385C93 /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
 		1384766575525B423DCC6B7B35A27657 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		14013C4FE0264A7F81F720990A90F0B2 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aeskey.c; sourceTree = "<group>"; };
+		14013C4FE0264A7F81F720990A90F0B2 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
 		1620189C75D39AF974C28B2EF9F7357B /* Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta-prefix.pch"; sourceTree = "<group>"; };
 		17AC24FED2E3F70F91EFEE60495E0954 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
 		18DC75AFF0DDD97DB6EED2E856BFDDDD /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
@@ -298,10 +297,10 @@
 		1F7509A89560105EA4ECB69D0D0BCCAF /* Pods-FFUpdateSDK-iOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFUpdateSDK-iOS_Tests-resources.sh"; sourceTree = "<group>"; };
 		20C23F48EF1A8D970F2F1D6F901719A3 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
 		229E2D052E5A7D39ECC34F1649E26A0B /* Pods-FFUpdateSDK-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FFUpdateSDK-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
-		248CF27F75B4DCA37A8255A36CE20C02 /* FFUpdateSDK-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "FFUpdateSDK-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		248CF27F75B4DCA37A8255A36CE20C02 /* FFUpdateSDK-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "FFUpdateSDK-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		254BD604897A2F09D4BDB20EB257ACC9 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		25D172DA0222C205F34821932A8C0608 /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
-		26080C9FE3940077B6018524531E9DBF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		26080C9FE3940077B6018524531E9DBF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		274D19F59B62E2EFC6376D4A3CCF2234 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
 		28DA47BA340AFDF094B7DB876275649C /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
 		290FEF58F7431677533D46F7AB14D10F /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
@@ -315,17 +314,17 @@
 		333E408251AF98E04574F1A0CDD6F2F7 /* FFUpdateSDK-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "FFUpdateSDK-iOS.modulemap"; path = "../../Headers/Public/FFUpdateSDK_iOS/FFUpdateSDK-iOS.modulemap"; sourceTree = "<group>"; };
 		335E9842D301DC3F059B731D808D5CB4 /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
 		33EF7061753FD0953F1680B1E6D2BFBE /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
-		353A5A9C25BBB17BBF8BFE690801DC7E /* libFBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSnapshotTestCase.a; path = libFBSnapshotTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		35E96209BECE8D28BEAB9F459C1D45F4 /* minishared.c */ = {isa = PBXFileReference; includeInIndex = 1; path = minishared.c; sourceTree = "<group>"; };
+		353A5A9C25BBB17BBF8BFE690801DC7E /* libFBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBSnapshotTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E96209BECE8D28BEAB9F459C1D45F4 /* minishared.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = minishared.c; sourceTree = "<group>"; };
 		3658A0804AC59DD39C19002A376BA957 /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
 		36A0DDF8CE7021D0D309B9142006B467 /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
 		37374F6DF00908BD000BE4B217B53213 /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
 		3846B20D3B796EB54CFFADEEF4A06350 /* Pods-FFUpdateSDK-iOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFUpdateSDK-iOS_Example-resources.sh"; sourceTree = "<group>"; };
-		38B7F988AC09B459A4739251BB9F635C /* libFFUpdateSDK-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libFFUpdateSDK-iOS.a"; path = "libFFUpdateSDK-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B7F988AC09B459A4739251BB9F635C /* libFFUpdateSDK-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFFUpdateSDK-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF2CE3223C6F21C8D486ABFC50EC807 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
-		3AFC5191A85E3C66C24C786BB462651C /* aes_ni.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aes_ni.c; sourceTree = "<group>"; };
+		3AFC5191A85E3C66C24C786BB462651C /* aes_ni.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = aes_ni.c; sourceTree = "<group>"; };
 		3B5E37BDE69FC1490F4526C9D0B2B2C9 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
-		3BACE8AC73CEEEC2A6378C1A07D55B8D /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; path = zip.c; sourceTree = "<group>"; };
+		3BACE8AC73CEEEC2A6378C1A07D55B8D /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
 		3D5E3541E66133FDEC894B4C35AE0DBB /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
 		3D84A53895A85F02A82849BDD77FC80F /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
 		3DF4504DBFCA8DC833C780BD3F56EE84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "FFUpdateSDK-iOS/Info.plist"; sourceTree = "<group>"; };
@@ -355,12 +354,12 @@
 		5B3F854FAA635BF954E28D01E9D2146D /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
 		5B5AA2D8A5CA1A670E73048020169BF5 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		5C8E418C3320747E048B20080A284FB1 /* Expecta+Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Expecta+Snapshots.xcconfig"; sourceTree = "<group>"; };
-		5C92F5010DDAF802320C7D25B8037315 /* ioapi_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ioapi_buf.c; sourceTree = "<group>"; };
-		5E0FFCDF9575D094CB4741CC111D9027 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aescrypt.c; sourceTree = "<group>"; };
+		5C92F5010DDAF802320C7D25B8037315 /* ioapi_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ioapi_buf.c; sourceTree = "<group>"; };
+		5E0FFCDF9575D094CB4741CC111D9027 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
 		5E6DFCE112E03F37CECB363769C18C5A /* H5UpdateViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = H5UpdateViewController.h; sourceTree = "<group>"; };
 		5F15278E11749F129D567386117EBD13 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
 		602A609984039927C76C88C0F080D4E4 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
-		60C38747475F9C9F725AB9D23A5FE195 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; path = unzip.c; sourceTree = "<group>"; };
+		60C38747475F9C9F725AB9D23A5FE195 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
 		61F96BF2AC964B3A8121E539F989D58C /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
 		64F89F18203530E2FD1E1E759DE2556E /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		65148667B9785678AED28E0CCA54EBFF /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
@@ -369,12 +368,12 @@
 		68388DAFE6E3D4ECEC2F38FF8D0C249F /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
 		69DD6604B848E9A70E0D807CCDDF8ADB /* Pods-FFUpdateSDK-iOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FFUpdateSDK-iOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6A20F52705D0EF4F14C914258808A2E3 /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
-		6AA80429488D58B9FF71B4C5C2556B7D /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; path = prng.c; sourceTree = "<group>"; };
+		6AA80429488D58B9FF71B4C5C2556B7D /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
 		6ABDEA800919630E294D1108DABA14E9 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
 		6B8D6E0A35391403BFDD7FE04E3AD486 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
 		6E18A0D194F0A9F08F938571058DE8DF /* Expecta+Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta+Snapshots-prefix.pch"; sourceTree = "<group>"; };
 		6E648817C8A2E773C47264B2F1F274C4 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
-		6E64D8C434F838D2E1854FCE6292D26C /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ioapi.c; sourceTree = "<group>"; };
+		6E64D8C434F838D2E1854FCE6292D26C /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
 		71A60ED8A43856322F0F3A45895C12DC /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = FBSnapshotTestCase.modulemap; path = ../../Headers/Public/FBSnapshotTestCase/FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		733FEA302815942AD4EF45D1DB16303A /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
 		74C0B6947696A3794982116004699E50 /* Pods-FFUpdateSDK-iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFUpdateSDK-iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -387,7 +386,7 @@
 		7B2FE2190BEE1CFF5FBBA0F0F60B70AC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		7BBAB371D52A9324CDC8CCF56B968908 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
 		7D12875A42AF6AA0C24FB88D32D6D167 /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
-		7DE652BE343E5BEFAB28AC6B6E1081E3 /* libExpecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libExpecta.a; path = libExpecta.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE652BE343E5BEFAB28AC6B6E1081E3 /* libExpecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExpecta.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		809AA609FFCE4FF88D6754BFBF72C735 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
 		839A0C00C6BAC780567504B09CECAD19 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
 		859201D55290C1F50EF607AE4BA1FF66 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
@@ -399,27 +398,27 @@
 		8A47FF885B7C7BC73BCD5970B27B8E4B /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
 		8A8ED6E0315C46BC936CA5C7B150716B /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
 		8CA9F086D881F0A94C602250E5E02751 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
-		8E17FA7F98D75D0A29E7870FFB13D13B /* libPods-FFUpdateSDK-iOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FFUpdateSDK-iOS_Tests.a"; path = "libPods-FFUpdateSDK-iOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E17FA7F98D75D0A29E7870FFB13D13B /* libPods-FFUpdateSDK-iOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFUpdateSDK-iOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0894A491DB373FF1D66DE580D0E9BA /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
 		904D8B818D55480D9794CEE7F81AEB81 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
 		909F8EBC928D4CAF3328499B75A8E39C /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9536F21F8211D186EE82B486775D5772 /* Pods-FFUpdateSDK-iOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFUpdateSDK-iOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		974C022AB2B5E3653F0D0DD54760E3E9 /* Pods-FFUpdateSDK-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FFUpdateSDK-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		976CF2C05A16D07092060BF8182C4C8C /* minishared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = minishared.h; sourceTree = "<group>"; };
 		98C956C5C9D8F8CC0BB3D2DAD87FF4F7 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
 		9A0CB47095FA4543BB3943A7779338EE /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
-		9C9BAAB5FB54A791D39457082EA7B758 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fileenc.c; sourceTree = "<group>"; };
+		9C9BAAB5FB54A791D39457082EA7B758 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
 		9D29B0C7AC8F1C6F6749D81B1A78538D /* Pods-FFUpdateSDK-iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FFUpdateSDK-iOS_Example-dummy.m"; sourceTree = "<group>"; };
 		9E325F597541C491360C3F6A73F4D474 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		9EF31DA5A6689E952111A5AEF5729B76 /* FFCordovaResourceUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FFCordovaResourceUpdate.m; path = "FFUpdateSDK-iOS/FFCordovaResourceUpdate.m"; sourceTree = "<group>"; };
-		A0C8FBE5AD48ECF80DA15ED3546B5033 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sha1.c; sourceTree = "<group>"; };
+		A0C8FBE5AD48ECF80DA15ED3546B5033 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
 		A2839B30386BD6992D07EED4862B5A0B /* update@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "update@3x.png"; sourceTree = "<group>"; };
 		A3495C094F7DEE6CAB27246B57943C59 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
 		A58BCEFDCBE5D114D14A7B8BE592D090 /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
 		A7DC4FFA2EAF7D71861DFB56996623F2 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		A94EE222FCA455D79B149678E54CCC6A /* Pods-FFUpdateSDK-iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FFUpdateSDK-iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AA277F9B7C125EE54D476BE52B424C26 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aestab.c; sourceTree = "<group>"; };
+		AA277F9B7C125EE54D476BE52B424C26 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
 		ACE03DD08C7AD951BA3C89B7A0379310 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
 		AD8D0395A1BCBB14F457ACE2CE1B4AC2 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
 		AD91962F9F52873CDDA654295A7D61E2 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
@@ -441,7 +440,7 @@
 		BBB6A925DF90E5500E7BDCC094FEBEA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BE1DEB31067EBE3C0CD6D1D375E6CAD0 /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
 		BE30B9CACCAA451E924755C0477E9EB7 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		BF07F930D8BE3D0A3FA53A9E8046C40A /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; path = hmac.c; sourceTree = "<group>"; };
+		BF07F930D8BE3D0A3FA53A9E8046C40A /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
 		BF6DCFA290463B08E89352AE38D89830 /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
 		C10558E9085EE4D0FF86616351E5F13B /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
 		C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -449,7 +448,7 @@
 		C7215306C6751890F202C4C4772C9B73 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
 		C8379EC29CB227687E393DAE7519F5FF /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
 		CA61CCA54E5F42D3F2D7AD571A60A138 /* Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Expecta-dummy.m"; sourceTree = "<group>"; };
-		CCC76128CC7E2A7C2A9F5F35A2C9C5A2 /* libExpecta+Snapshots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libExpecta+Snapshots.a"; path = "libExpecta+Snapshots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC76128CC7E2A7C2A9F5F35A2C9C5A2 /* libExpecta+Snapshots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libExpecta+Snapshots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BAF64E068F633A0924F80C37CDAF96 /* FFUpdateSDK-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FFUpdateSDK-iOS.xcconfig"; sourceTree = "<group>"; };
 		D5CE9A9861E6B16D0E3CD7227E68197F /* aes_ni.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes_ni.h; sourceTree = "<group>"; };
 		D77B07CA7D221E3EC46B93C00BF37CDE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -484,10 +483,9 @@
 		F81BB0E5EF58E2961108E771D7E37748 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
 		FA5623CB2D926B67824B99A7D3F9892F /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		FACF71833ABA4B84C412E81B5693EC13 /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
-		FB890483FBC532EFDA77548EE3CB77CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3C1DAD4AC7E02C71A1D2953FA12A71 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
-		FF0C904B0DF51E54F26DCE3F2B5EF559 /* libSpecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSpecta.a; path = libSpecta.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFE376FBEB93EA95AAA999B96CAC1962 /* ioapi_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ioapi_mem.c; sourceTree = "<group>"; };
+		FF0C904B0DF51E54F26DCE3F2B5EF559 /* libSpecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpecta.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE376FBEB93EA95AAA999B96CAC1962 /* ioapi_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ioapi_mem.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -572,7 +570,6 @@
 				BE30B9CACCAA451E924755C0477E9EB7 /* zip.h */,
 				BF4D91CAC96162F5E58A0EF860069268 /* aes */,
 			);
-			name = minizip;
 			path = minizip;
 			sourceTree = "<group>";
 		};
@@ -717,7 +714,6 @@
 		5B099B830790A53F05A52446EEE647C2 /* SSZipArchive */ = {
 			isa = PBXGroup;
 			children = (
-				FB890483FBC532EFDA77548EE3CB77CE /* Info.plist */,
 				33EF7061753FD0953F1680B1E6D2BFBE /* SSZipArchive.h */,
 				0A9D56E370908E29C551714FC86426D3 /* SSZipArchive.m */,
 				6A20F52705D0EF4F14C914258808A2E3 /* SSZipCommon.h */,
@@ -774,7 +770,6 @@
 				4153CA3EBDD7E45CD227EBE7250CA36B /* update@2x.png */,
 				A2839B30386BD6992D07EED4862B5A0B /* update@3x.png */,
 			);
-			name = icon.bundle;
 			path = icon.bundle;
 			sourceTree = "<group>";
 		};
@@ -787,7 +782,6 @@
 				E3FF5D8D77B2B53A5C24ED7E6720FC21 /* EXPMatchers+FBSnapshotTest.m */,
 				D7C2EF7E9823A0AA06AD6A3812CB30DC /* Support Files */,
 			);
-			name = "Expecta+Snapshots";
 			path = "Expecta+Snapshots";
 			sourceTree = "<group>";
 		};
@@ -848,7 +842,6 @@
 				A0C8FBE5AD48ECF80DA15ED3546B5033 /* sha1.c */,
 				1138D27C7F194074B86B8A30C42726D5 /* sha1.h */,
 			);
-			name = aes;
 			path = aes;
 			sourceTree = "<group>";
 		};
@@ -944,7 +937,6 @@
 				68388DAFE6E3D4ECEC2F38FF8D0C249F /* XCTestCase+Specta.m */,
 				B6102DE992BB559D3C3528ED126E5811 /* Support Files */,
 			);
-			name = Specta;
 			path = Specta;
 			sourceTree = "<group>";
 		};
@@ -955,7 +947,6 @@
 				557EC4BDE9F0C8D5076911C85265C765 /* Support Files */,
 				57670036015C013A068492363BE6E0AC /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -1037,7 +1028,6 @@
 				BF6DCFA290463B08E89352AE38D89830 /* NSValue+Expecta.m */,
 				5279F2AD1DD9BAFA3FB803587C1E6E85 /* Support Files */,
 			);
-			name = Expecta;
 			path = Expecta;
 			sourceTree = "<group>";
 		};
@@ -1362,7 +1352,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/FBSnapshotTestCase/FBSnapshotTestCase.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/FBSnapshotTestCase/FBSnapshotTestCase-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1487,7 +1476,6 @@
 				9ECE1C487F4076053D90F4D6EAE1889D /* H5UpdateViewController.m in Sources */,
 				0664E1B70B1519E92E2A805620EB094F /* hmac.c in Sources */,
 				22064F733505593991DDD2ECE5BC3FA6 /* Info.plist in Sources */,
-				260E8E057569BA0EB114D31B1EC94DB3 /* Info.plist in Sources */,
 				92624938B3B63C953F32E3FF4EC6DEE0 /* ioapi.c in Sources */,
 				DE65B7C736B94DCCEF5B35947620D4B3 /* ioapi_buf.c in Sources */,
 				DBD9A007237D70D20BF7D9E511ACECCF /* ioapi_mem.c in Sources */,

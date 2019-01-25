@@ -11,6 +11,9 @@
 
 @interface UIViewController (FFUpdate)
 
+/**
+ 初始化cordova 控制器配置
+ */
 - (void)cordova_initCDVViewController;
 
 @end

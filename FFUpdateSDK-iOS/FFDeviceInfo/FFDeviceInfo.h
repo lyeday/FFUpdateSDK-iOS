@@ -24,6 +24,13 @@ typedef enum : NSUInteger {
 
 + (void)reportDeviceInfo;
 
+/**
+ 上报安装
 
-+ (void)reportInstall:(INSTALL_TYPE)installType appkey:(NSString *)appkey sysVersion:(NSInteger)sysversion;
+ @param installType 安装类型
+ @param appkey appkey description
+ @param sysversion sysversion description
+ @param type 0:首次安装,1:更新安装
+ */
++ (void)reportInstall:(INSTALL_TYPE)installType appkey:(NSString *)appkey sysVersion:(NSInteger)sysversion type:(NSInteger)type;
 @end

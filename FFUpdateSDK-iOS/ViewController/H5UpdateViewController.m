@@ -106,7 +106,7 @@
 - (void)updateComplete{
     NSInteger current = [[self.data valueForKey:@"current"] integerValue];
     dispatch_async(dispatch_get_main_queue(), ^{
-        [FFDeviceInfo reportInstall:INSTALL_H5 appkey:[FFCordovaResourceUpdate appkey] sysVersion:current];
+        [FFDeviceInfo reportInstall:INSTALL_H5 appkey:[FFCordovaResourceUpdate appkey] sysVersion:current type:1];
         self.progressView.progress = 0;
         self.progressLab.text = @"0%";
         self.progressTitleLab.text = @"正在应用更新文件...";

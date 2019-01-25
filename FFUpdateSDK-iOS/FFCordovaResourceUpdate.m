@@ -115,6 +115,8 @@
     NSInteger localHtmlVersion = [U_DEF integerForKey:KEY_CORDOVA_RESOURCE_VERSION];
     if (localHtmlVersion < currentVersion) {
         [U_DEF setInteger:currentVersion forKey:KEY_CORDOVA_RESOURCE_VERSION];
+        [U_DEF setObject:nil forKey:KEY_CORDOVA_RESOURCE_INDEX];
+        [[NSFileManager defaultManager] removeItemAtURL:[self wwwURL] error:nil];
     }
     [U_DEF synchronize];
 }

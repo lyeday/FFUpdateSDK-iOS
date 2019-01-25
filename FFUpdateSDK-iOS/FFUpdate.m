@@ -102,7 +102,7 @@
             FFLog(@"安装完成");
             [U_DEF setValue:dateString forKey:LAST_INSTALL_DATE];
             [U_DEF setInteger:readyVersion forKey:CURRENT_VERSION];
-            [FFDeviceInfo reportInstall:INSTALL_IPA appkey:shareObj.appKey sysVersion:readyVersion];
+            [FFDeviceInfo reportInstall:INSTALL_IPA appkey:shareObj.appKey sysVersion:readyVersion type:1];
         }
     }else{ //首次安装
         shareObj.firstInstall = true;
@@ -129,7 +129,7 @@
             [U_DEF setInteger:sysVersion forKey:CURRENT_VERSION];
             [U_DEF setInteger:sysVersion forKey:READY_UPDATE_VERSION];
             FFLog(@"首次安装设置版本信息:version:%ld, date:%@",sysVersion,dateString);
-            [FFDeviceInfo reportInstall:INSTALL_IPA appkey:shareObj.appKey sysVersion:sysVersion];
+            [FFDeviceInfo reportInstall:INSTALL_IPA appkey:shareObj.appKey sysVersion:sysVersion type:0];
             shareObj.isUpdate = false;
             return;
         }

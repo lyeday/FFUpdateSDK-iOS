@@ -146,7 +146,7 @@ static int const kOpenUDIDRedundancySlots = 100;
     });
 }
 
-+ (void)reportInstall:(INSTALL_TYPE)installType appkey:(NSString *)appkey sysVersion:(NSInteger)sysversion{
++ (void)reportInstall:(INSTALL_TYPE)installType appkey:(NSString *)appkey sysVersion:(NSInteger)sysversion type:(NSInteger)type{
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params setValue:[self uuid] forKey:@"udid"];
     [params setValue:appkey forKey:@"appkey"];
@@ -154,7 +154,7 @@ static int const kOpenUDIDRedundancySlots = 100;
     [params setValue:[self appBuildVersion] forKey:@"b_version"];
     [params setValue:@(sysversion) forKey:@"sys_version"];
     [params setValue:@(installType) forKey:@"install_type"];
-    [params setValue:@"0" forKey:@"type"];
+    [params setValue:@(type) forKey:@"type"];
     [FFUpdateNetwork requestUrl:@"appWeb.php/app/reportinstall" params:params successful:^(int code, NSString *message, id data) {
 //        if(code==0){
 //            NSLog(@"安装情况上传成功:%@",data);
