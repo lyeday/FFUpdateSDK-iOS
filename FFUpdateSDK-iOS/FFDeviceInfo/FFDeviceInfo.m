@@ -147,6 +147,10 @@ static int const kOpenUDIDRedundancySlots = 100;
 }
 
 + (void)reportInstall:(INSTALL_TYPE)installType appkey:(NSString *)appkey sysVersion:(NSInteger)sysversion type:(NSInteger)type{
+#if DEBUG
+    NSLog(@"DEBUG ....");
+    return;
+#endif
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params setValue:[self uuid] forKey:@"udid"];
     [params setValue:appkey forKey:@"appkey"];
@@ -156,10 +160,11 @@ static int const kOpenUDIDRedundancySlots = 100;
     [params setValue:@(installType) forKey:@"install_type"];
     [params setValue:@(type) forKey:@"type"];
     [FFUpdateNetwork requestUrl:@"appWeb.php/app/reportinstall" params:params successful:^(int code, NSString *message, id data) {
-//        if(code==0){
-//            NSLog(@"安装情况上传成功:%@",data);
-//        }
+        if(code==0){
+//            NSLog(@"安装情况上传成功:%@",message);
+        }
     } error:^(NSError *error) {
+//        NSLog(@"上报失败:%@",error);
     }];
 }
 
