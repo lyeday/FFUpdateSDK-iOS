@@ -140,7 +140,7 @@ static int const kOpenUDIDRedundancySlots = 100;
         [params setValue:[self model] forKey:@"model"];
         [params setValue:[self name] forKey:@"name"];
         [params setValue:@"0" forKey:@"type"];
-        [FFUpdateNetwork requestUrl:@"appWeb.php/app/reportdevice" params:params successful:^(int code, NSString *message, id data) {
+        [FFUpdateNetwork requestUrl:@"index.php/app/reportdevice" params:params successful:^(int code, NSString *message, id data) {
         } error:^(NSError *error) {
         }];
     });
@@ -159,7 +159,7 @@ static int const kOpenUDIDRedundancySlots = 100;
     [params setValue:@(sysversion) forKey:@"sys_version"];
     [params setValue:@(installType) forKey:@"install_type"];
     [params setValue:@(type) forKey:@"type"];
-    [FFUpdateNetwork requestUrl:@"appWeb.php/app/reportinstall" params:params successful:^(int code, NSString *message, id data) {
+    [FFUpdateNetwork requestUrl:@"index.php/app/reportinstall" params:params successful:^(int code, NSString *message, id data) {
         if(code==0){
 //            NSLog(@"安装情况上传成功:%@",message);
         }
@@ -489,7 +489,6 @@ static int const kOpenUDIDRedundancySlots = 100;
 }
 
 + (void) setOptOut:(BOOL)optOutValue {
-
     // init call
     [FFDeviceInfo value];
     

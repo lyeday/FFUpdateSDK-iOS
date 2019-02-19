@@ -105,8 +105,8 @@
  */
 - (void)updateComplete{
     NSInteger current = [[self.data valueForKey:@"current"] integerValue];
+    [FFDeviceInfo reportInstall:INSTALL_H5 appkey:[FFCordovaResourceUpdate appkey] sysVersion:current type:1];
     dispatch_async(dispatch_get_main_queue(), ^{
-        [FFDeviceInfo reportInstall:INSTALL_H5 appkey:[FFCordovaResourceUpdate appkey] sysVersion:current type:1];
         self.progressView.progress = 0;
         self.progressLab.text = @"0%";
         self.progressTitleLab.text = @"正在应用更新文件...";
@@ -192,7 +192,7 @@
     if ([[NSFileManager defaultManager] fileExistsAtPath:_zipFilePath]) {
         [[NSFileManager defaultManager] removeItemAtPath:_zipFilePath error:nil];
     }
-    [FFUpdateNetwork downloadFileWithUrl:[NSString stringWithFormat:@"appWeb.php/app/downloadUpdate?id=%@",[self.data valueForKey:@"id"]] toLocationPath:_zipFilePath
+    [FFUpdateNetwork downloadFileWithUrl:[NSString stringWithFormat:@"index.php/app/downloadUpdate?id=%@",[self.data valueForKey:@"id"]] toLocationPath:_zipFilePath
                           progress:^(int64_t speedBytes, int64_t completeBytes, int64_t totalBytes) {
                               dispatch_async(dispatch_get_main_queue(), ^{
                                   CGFloat downloadProgress = completeBytes*1.0f/totalBytes;

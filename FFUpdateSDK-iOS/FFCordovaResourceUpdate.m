@@ -75,7 +75,7 @@
     [params setValue:@"ios" forKey:@"platform"];
     [params setValue:@(appVersion) forKey:@"version"];
     [params setValue:[self shareUpdate].appKey forKey:@"appkey"];
-    [FFUpdateNetwork requestUrl:@"appWeb.php/app/checkhtml" params:params successful:^(int code, NSString *message, id data) {
+    [FFUpdateNetwork requestUrl:@"index.php/app/checkhtml" params:params successful:^(int code, NSString *message, id data) {
         if (code == 0) {
             [[self shareUpdate] setData:data];
             NSInteger current = [[data valueForKey:@"current"] integerValue];

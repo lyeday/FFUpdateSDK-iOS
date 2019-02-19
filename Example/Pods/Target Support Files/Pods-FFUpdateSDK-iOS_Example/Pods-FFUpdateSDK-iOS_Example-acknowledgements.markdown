@@ -1,6 +1,11 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## BuglyHotfix
+
+Copyright (C) 2017 Tencent Bugly, Inc. All rights reserved.
+
+
 ## FFUpdateSDK-iOS
 
 Copyright (c) 2019 voisen <voisen@icloud.com>

@@ -1,4 +1,7 @@
 PODS:
+  - BuglyHotfix (2.1.0):
+    - BuglyHotfix/Core (= 2.1.0)
+  - BuglyHotfix/Core (2.1.0)
   - Expecta (1.0.6)
   - "Expecta+Snapshots (3.1.1)":
     - Expecta (~> 1.0)
@@ -13,6 +16,7 @@ PODS:
   - Specta (1.0.7)
 
 DEPENDENCIES:
+  - BuglyHotfix
   - Expecta
   - "Expecta+Snapshots"
   - FBSnapshotTestCase
@@ -21,6 +25,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - BuglyHotfix
     - Expecta
     - "Expecta+Snapshots"
     - FBSnapshotTestCase
@@ -31,12 +36,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  BuglyHotfix: 99a969c77da1baae823a7537acb16e4f1985a5f5
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   FFUpdateSDK-iOS: baa0d31c0b8d1c0782a0c3b6a4f98ae5ef0ac378
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: ccc2334bb9586c55b73f5cff4611af4c92ee0a8e
+PODFILE CHECKSUM: 3cdeae109599c74262bbbf211dd8dc17bb0ac7ce
 
 COCOAPODS: 1.5.3

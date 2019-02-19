@@ -4,7 +4,7 @@ platform :ios, '8.4'
 
 target 'FFUpdateSDK-iOS_Example' do
   pod 'FFUpdateSDK-iOS', :path => '../'
-
+  pod 'BuglyHotfix'
   target 'FFUpdateSDK-iOS_Tests' do
     inherit! :search_paths
 
