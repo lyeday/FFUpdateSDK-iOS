@@ -64,7 +64,7 @@
 
 + (void)checkUpdateWithViewController:(UIViewController *)vc{
     if ([FFUpdate isUpdate]) {
-        [self performSelector:@selector(checkUpdateWithViewController:) withObject:vc afterDelay:10];
+        [self performSelector:@selector(checkUpdateWithViewController:) withObject:vc afterDelay:5];
         return;
     }
     
@@ -82,12 +82,16 @@
             NSInteger min = [[data valueForKey:@"min"] integerValue];
             NSString *msg = [data valueForKey:@"msg"];
             if (localHtmlVersion < min || localHtmlVersion > current) { //强制更新
-                [[self shareUpdate] gotoUpdate];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"资源包更新" message:[NSString stringWithFormat:@"%@",msg] delegate:[self shareUpdate] cancelButtonTitle:nil otherButtonTitles:@"立即更新", nil];
+                    alertView.tag = 999;
+                    [alertView show];
+                });
                 return ;
             }
             if (localHtmlVersion < current) { //推荐更新
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"应用包更新" message:[NSString stringWithFormat:@"%@",msg] delegate:[self shareUpdate] cancelButtonTitle:@"下次更新" otherButtonTitles:@"立即更新", nil];
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"资源包更新" message:[NSString stringWithFormat:@"%@",msg] delegate:[self shareUpdate] cancelButtonTitle:@"下次更新" otherButtonTitles:@"立即更新", nil];
                     [alertView show];
                 });
                 return;
@@ -159,6 +163,10 @@
 #pragma mark - UIAlertViewDelegate
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (alertView.tag == 999) {
+        [self gotoUpdate];
+        return;
+    }
     if (buttonIndex == 0) { //下次再说
         
     }else{ //立即更新
